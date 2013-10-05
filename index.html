@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About me</title>
+    <script type="text/javascript">
+    function ShowHide(show, hide)  {
+	  document.getElementById(show).style.display = 'block';
+	  document.getElementById(hide).style.display = 'none';
+	}
+  </script>
+</head>
+<body>
+	<div id="main">
+		<h1>About me</h1>
+		<p>Welcome on my site!</p>
+		<input type="button" value="History" onclick="ShowHide('History', 'main')"/>
+		<input type="button" value="Golden Thoughts" onclick="ShowHide('GoldenThoughts', 'main')"/>
+		<input type="button" value="Photos" onclick="ShowHide('Photos', 'main')"/>
+	</div>
+	<div style="display:none" id="History">
+		<h1>History</h1>
+		<input type="button" value="Back" onclick="ShowHide('main', 'History')"/>
+	</div>  
+	<div style="display:none" id="GoldenThoughts">
+		<h1>GoldenThoughts</h1>
+		<input type="button" value="Back" onclick="ShowHide('main', 'GoldenThoughts')"/>
+	</div>
+	<div style="display:none" id="Photos">
+		<h1>Photos</h1>
+		<input type="button" value="Back" onclick="ShowHide('main', 'Photos')"/>
+	</div>   
+</body>
+</html>
